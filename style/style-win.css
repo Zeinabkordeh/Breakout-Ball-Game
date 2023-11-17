@@ -1,0 +1,54 @@
+
+div {
+  text-align: center;
+}
+
+.modal-body{
+    text-align: left;
+  }
+
+ 
+
+span {
+  color: rgb(0, 0, 0);
+  padding: 1.5rem;
+  font-size: 5rem;
+  display: inline-block;
+}
+
+span.horizontal-shake {
+    animation: horizontal-shaking 0.35s infinite;
+  }
+
+.game-wrapper {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    top: 5rem;
+}
+
+main {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    top: 3rem;
+}
+
+.gameWin{
+    width: 90%;
+}
+
+.startOver {
+    width: 8rem;
+}
+
+
+@media screen and (min-width: 65em) {
+    .startOver {
+        width: 11rem;
+    }
+
+    .gameWin{
+        width: 60%;
+    }
+}

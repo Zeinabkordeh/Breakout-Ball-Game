@@ -1,0 +1,58 @@
+
+div {
+    text-align: center;
+  }
+
+
+  .modal-body{
+    text-align: left;
+  }
+
+  span {
+    color: rgb(0, 0, 0);
+    padding: 1.5rem;
+    font-size: 5rem;
+    display: inline-block;
+  }
+  
+  span.horizontal-shake {
+      animation: horizontal-shaking 0.35s infinite;
+    }
+  
+  .game-wrapper {
+      display: flex;
+      position: relative;
+      justify-content: center;
+      top: 5rem;
+  }
+  
+  main {
+      display: flex;
+      position: relative;
+      justify-content: center;
+      height: 80%;
+      top: 2rem;
+  }
+  
+  .gameover{
+      width: 70%;
+    
+  }
+  
+  .startOver {
+      width: 8rem;
+      position: relative;
+      top: -3rem;
+  }
+  
+  
+  @media screen and (min-width: 65em) {
+      .startOver {
+          width: 11rem;
+      }
+  
+      .gameover{
+          width: 95%;
+      }
+  }
+

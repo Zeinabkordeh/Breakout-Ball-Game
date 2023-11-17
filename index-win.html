@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Menu</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Henny+Penny&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./style/style-splash.css">
+  <link rel="stylesheet" href="./style/style-win.css">
+  
+</head>
+<body>
+    <audio id="myAudio" autoplay>
+      <source src="./Audio/mixkit-game-bonus-reached-2065.wav" type="audio/mpeg">
+      <source src="./Audio/mixkit-game-bonus-reached-2065.wav" type="audio/ogg">
+      Your browser does not support the audio element.
+    </audio>
+    <header class="header-class" >
+        <button id= "button-quit" type="button" onclick="document.location='./index-splash.html'">
+          QUIT
+        </button>
+        <button id= "button-help" type="button" data-bs-toggle="modal" data-bs-target="#setupInstructions">
+          HELP
+        </button>
+    </header>
+
+    <main >
+      <div id="main">
+        <section>
+          <!-- Modal -->
+          <div class="modal fade" id="setupInstructions" tabindex="-1" aria-labelledby="setupInstructionsModalLabel" aria-hidden="true" >
+              <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="setupInstructionsModalLabel">Setup Instructions</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <p class="modal-body">
+                        -Quit to Splash Screen:<br>
+                        Click on "Quit" to return to the splash screen.<br>
+                        -Start over:<br>
+                        Click on "start Over" to return to the game screen.<br>
+                          
+                      </p>
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </section>
+
+        <img class="gameWin" src="./images/wining.png" alt="gameWin" >
+        <div class="game-wrapper" >
+        
+          <button id="start-over" class= "startOver" type="button" onclick="document.location='./index-game.html'">
+            Start Over
+          </button>
+          
+
+        </div>
+
+      </div>
+    </main>
+
+  <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <script src="./script/script-gameResult.js"></script>
+</body>
+</html>

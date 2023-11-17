@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Menu</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./style/style-splash.css">
+  
+</head>
+<body>
+
+    <header class="header-class" >
+        <button id= "button-quit" type="button" onclick="document.location='https://www.google.com/'">
+          QUIT
+        </button>
+        <button id= "button-help" type="button" data-bs-toggle="modal" data-bs-target="#setupInstructions">
+          HELP
+        </button>
+    </header>
+
+    <main >
+      <div id="main">
+        <section>
+          <!-- Modal -->
+          <div class="modal fade" id="setupInstructions" tabindex="-1" aria-labelledby="setupInstructionsModalLabel" aria-hidden="true" >
+              <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="setupInstructionsModalLabel">Setup Instructions</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <p class="modal-body">
+                        "Welcome to the game! Here's what you need to do:"<br>
+                       
+                        -Enter Your Name:<br>
+                        Provide your name to personalize the game.<br>
+                    
+                        -Choose Your Level:<br>
+                        Click on "Normal" for an easier experience or "Difficult" for a challenge.<br>
+                    
+                        -Play the Game:<br>
+                        Follow the rules and instructions displayed on the screen.<br>
+                    
+                        -Quit the Game:<br>
+                        Click on "Quit" to exit the game.<br>
+                          
+                      </p>
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </section>
+
+        <div class="game-wrapper" >
+
+          <img class= gameName src="./images/GAME.png" alt="gameName" >
+          <div id="SetPlayerName">
+            <input type="text" id="playerNameInput" placeholder="Enter Player Name" onkeypress='setPlayerName(event)'>
+          </div>
+          <button class= "difficulty" id="dif1" type="button" >
+            Normal
+          </button>
+          <button class= "difficulty" id="dif2" type="button" >
+            Difficult
+          </button>
+
+        </div>
+
+      </div>
+    </main>
+
+  <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <script src="./script/script-splash.js"></script>
+</body>
+</html>
